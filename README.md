@@ -1,8 +1,10 @@
 # python-package
 
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=gambit328_devops-engineer-from-scratch-project-49&metric=sqale_rating&token=125e0dea1bdb3ddd708a0a2754263a939952d0cb)](https://sonarcloud.io/summary/new_code?id=gambit328_devops-engineer-from-scratch-project-49)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=gambit328_devops-engineer-from-scratch-project-49&metric=coverage&token=125e0dea1bdb3ddd708a0a2754263a939952d0cb)](https://sonarcloud.io/summary/new_code?id=gambit328_devops-engineer-from-scratch-project-49)
 [![hexlet-check](https://github.com/gambit328/devops-engineer-from-scratch-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/gambit328/devops-engineer-from-scratch-project-49/actions/workflows/hexlet-check.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gambit328_devops-engineer-from-scratch-project-49&metric=alert_status&token=125e0dea1bdb3ddd708a0a2754263a939952d0cb)](https://sonarcloud.io/summary/new_code?id=gambit328_devops-engineer-from-scratch-project-49)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=gambit328_devops-engineer-from-scratch-project-49&metric=sqale_rating&token=125e0dea1bdb3ddd708a0a2754263a939952d0cb)](https://sonarcloud.io/summary/new_code?id=gambit328_devops-engineer-from-scratch-project-49)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=gambit328_devops-engineer-from-scratch-project-49&metric=reliability_rating&token=125e0dea1bdb3ddd708a0a2754263a939952d0cb)](https://sonarcloud.io/summary/new_code?id=gambit328_devops-engineer-from-scratch-project-49)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=gambit328_devops-engineer-from-scratch-project-49&metric=security_rating&token=125e0dea1bdb3ddd708a0a2754263a939952d0cb)](https://sonarcloud.io/summary/new_code?id=gambit328_devops-engineer-from-scratch-project-49)
 
 ### Links
 
