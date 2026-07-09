@@ -13,4 +13,7 @@ package-install:
 package-reinstall:
 	uv tool install --force dist/*.whl
 
-.PHONY: install build
+lint:
+	uv run ruff check brain_games
+
+.PHONY: install build lint check
