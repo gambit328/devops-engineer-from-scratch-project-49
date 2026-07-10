@@ -16,4 +16,7 @@ package-reinstall:
 lint:
 	uv run ruff check brain_games
 
-.PHONY: install build lint check
+test:
+	uv run pytest
+
+.PHONY: install build lint check test
