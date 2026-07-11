@@ -30,10 +30,12 @@ This project was built using these tools:
 make build
 make package-install
 ```
-<a href="https://asciinema.org/a/SLMO6P8vxZxEBshp" target="_blank"><img src="https://asciinema.org/a/SLMO6P8vxZxEBshp.svg" /></a>
+<a href="https://asciinema.org/a/vnioaaOAkz18Wf6e" target="_blank"><img src="https://asciinema.org/a/vnioaaOAkz18Wf6e.svg" /></a>
 
 ### Examples
 
 ```bash
 brain-games
 ```
+<a href="https://asciinema.org/a/soYHMpLB3OU2yFlC" target="_blank"><img src="https://asciinema.org/a/soYHMpLB3OU2yFlC.svg" /></a>
+<a href="https://asciinema.org/a/hoB0JqUlRXAcWuGV" target="_blank"><img src="https://asciinema.org/a/hoB0JqUlRXAcWuGV.svg" /></a>
