@@ -24,17 +24,13 @@ This project was built using these tools:
 
 ---
 
-### Build
+### Build and Setup
 
 ```bash
 make build
-```
-
-### Setup
-
-```bash
 make package-install
 ```
+<a href="https://asciinema.org/a/SLMO6P8vxZxEBshp" target="_blank"><img src="https://asciinema.org/a/SLMO6P8vxZxEBshp.svg" /></a>
 
 ### Examples
 
