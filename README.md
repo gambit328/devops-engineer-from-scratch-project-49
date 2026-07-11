@@ -30,7 +30,7 @@ This project was built using these tools:
 make build
 make package-install
 ```
-[![asciicast](https://asciinema.org/a/SLMO6P8vxZxEBshp.svg)](https://asciinema.org/a/SLMO6P8vxZxEBshp)
+<a href="https://asciinema.org/a/SLMO6P8vxZxEBshp" target="_blank"><img src="https://asciinema.org/a/SLMO6P8vxZxEBshp.svg" /></a>
 
 ### Examples
 
