@@ -30,7 +30,7 @@ This project was built using these tools:
 make build
 make package-install
 ```
-<script src="https://asciinema.org/a/vnioaaOAkz18Wf6e.js" id="asciicast-vnioaaOAkz18Wf6e" async="true"></script>
+<a href="https://asciinema.org/a/vnioaaOAkz18Wf6e" target="_blank"><img src="https://asciinema.org/a/vnioaaOAkz18Wf6e.svg" /></a>
 
 ### Examples
 
