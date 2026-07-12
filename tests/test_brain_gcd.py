@@ -1,4 +1,3 @@
-import brain_games
 from brain_games.games.brain_gcd_game import (
     get_questions,
     get_task,
