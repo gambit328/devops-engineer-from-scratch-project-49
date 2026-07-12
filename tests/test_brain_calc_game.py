@@ -12,7 +12,7 @@ def test_get_questions(monkeypatch):
         "brain_games.games.brain_calc_game.randint", lambda a, b: next(numbers)
     )
 
-    assert get_questions() == [("5 + 2", 7), ("1 - 3", -2), ("2 * 3", 6)]
+    assert get_questions() == [("5 + 2", "7"), ("1 - 3", "-2"), ("2 * 3", "6")]
 
 
 def test_get_task():
@@ -20,6 +20,6 @@ def test_get_task():
 
 
 def test_generate_question():
-    assert generate_question(5, 2, "+") == ("5 + 2", 7)
-    assert generate_question(1, 3, "-") == ("1 - 3", -2)
-    assert generate_question(2, 3, "*") == ("2 * 3", 6)
+    assert generate_question(5, 2, "+") == ("5 + 2", "7")
+    assert generate_question(1, 3, "-") == ("1 - 3", "-2")
+    assert generate_question(2, 3, "*") == ("2 * 3", "6")
