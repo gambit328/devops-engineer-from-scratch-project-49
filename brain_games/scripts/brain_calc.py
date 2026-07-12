@@ -3,7 +3,7 @@ from brain_games.games.brain_calc_game import get_questions, get_task
 
 
 def main():
-    game_run(get_questions, get_task)
+    game_run(get_questions(), get_task())
 
 
 if __name__ == "__main__":
