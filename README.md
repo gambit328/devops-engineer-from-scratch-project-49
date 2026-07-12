@@ -30,7 +30,7 @@ This project was built using these tools:
 make build
 make package-install
 ```
-<a href="https://asciinema.org/a/vnioaaOAkz18Wf6e" target="_blank"><img src="https://asciinema.org/a/vnioaaOAkz18Wf6e.svg" /></a>
+<script src="https://asciinema.org/a/vnioaaOAkz18Wf6e.js" id="asciicast-vnioaaOAkz18Wf6e" async="true"></script>
 
 ### Examples
 
@@ -39,3 +39,5 @@ brain-games
 ```
 <a href="https://asciinema.org/a/soYHMpLB3OU2yFlC" target="_blank"><img src="https://asciinema.org/a/soYHMpLB3OU2yFlC.svg" /></a>
 <a href="https://asciinema.org/a/hoB0JqUlRXAcWuGV" target="_blank"><img src="https://asciinema.org/a/hoB0JqUlRXAcWuGV.svg" /></a>
+<a href="https://asciinema.org/a/Oz8XAaxEI40zSV5L" target="_blank"><img src="https://asciinema.org/a/Oz8XAaxEI40zSV5L.svg" /></a>
+<a href="https://asciinema.org/a/fxlEL8LHFMV4uCME" target="_blank"><img src="https://asciinema.org/a/fxlEL8LHFMV4uCME.svg" /></a>
