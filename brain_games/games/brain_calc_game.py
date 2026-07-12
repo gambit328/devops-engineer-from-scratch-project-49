@@ -11,7 +11,6 @@ def get_questions():
         operation = operations[randint(0, 2)]
 
         question, correct_answer = generate_question(num1, num2, operation)
-
         questions.append((question, correct_answer))
 
     return questions
@@ -34,4 +33,4 @@ def generate_question(num1, num2, operation):
 
     question = f"{num1} {operation} {num2}"
 
-    return (question, correct_answer)
+    return (question, str(correct_answer))
