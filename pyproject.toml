@@ -14,12 +14,9 @@ build-backend = "hatchling.build"
 packages = ["brain_games"]
 
 [dependency-groups]
-dev = [
-    "pytest>=9.1.1",
-    "pytest-cov>=7.1.0",
-    "ruff>=0.15.20",
-]
+dev = ["pytest>=9.1.1", "pytest-cov>=7.1.0", "ruff>=0.15.20"]
 
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
