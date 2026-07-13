@@ -1,9 +1,10 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = "CLI brain games: even, calc, gcd, progression, prime"
 readme = "README.md"
 requires-python = ">=3.14"
+authors = [{ name = "hexlet student", email = "example@gmail.com" }]
 dependencies = ["prompt>=0.4.1"]
 
 [build-system]
