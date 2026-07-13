@@ -45,3 +45,5 @@ brain-games
 <a href="https://asciinema.org/a/xWKhkXnQ1HaxlbvD" target="_blank"><img src="https://asciinema.org/a/xWKhkXnQ1HaxlbvD.svg" /></a>
 <a href="https://asciinema.org/a/a9gGjdEhO2fGhmqL" target="_blank"><img src="https://asciinema.org/a/a9gGjdEhO2fGhmqL.svg" /></a>
 <a href="https://asciinema.org/a/wdE7PusXG4RAQvWK" target="_blank"><img src="https://asciinema.org/a/wdE7PusXG4RAQvWK.svg" /></a>
+<a href="https://asciinema.org/a/NCIVm64XI9ZByv3C" target="_blank"><img src="https://asciinema.org/a/NCIVm64XI9ZByv3C.svg" /></a>
+<a href="https://asciinema.org/a/US3LKKyvMkfyjEE0" target="_blank"><img src="https://asciinema.org/a/US3LKKyvMkfyjEE0.svg" /></a>
