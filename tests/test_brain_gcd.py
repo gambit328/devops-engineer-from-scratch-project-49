@@ -16,7 +16,7 @@ def test_get_questions(monkeypatch):
 
 
 def test_get_task():
-    assert get_task() == "Find the greatest common divisor of given numbers"
+    assert get_task() == "Find the greatest common divisor of given numbers."
 
 
 def test_generate_question():

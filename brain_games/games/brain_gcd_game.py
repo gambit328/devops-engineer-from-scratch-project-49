@@ -15,7 +15,7 @@ def get_questions():
 
 
 def get_task():
-    return "Find the greatest common divisor of given numbers"
+    return "Find the greatest common divisor of given numbers."
 
 
 def generate_question(num1, num2):
