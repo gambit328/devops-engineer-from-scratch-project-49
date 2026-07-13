@@ -24,7 +24,7 @@ def test_game_run_win(monkeypatch, capsys, even_questions):
     game_run(even_questions, even_task)
     out = capsys.readouterr().out
 
-    assert "Let's try again, Bill" not in out
+    assert "Let's try again, Bill!" not in out
     assert "Congratulations, Bill!" in out
 
 
@@ -41,7 +41,7 @@ def test_game_run_lose(monkeypatch, capsys, even_questions):
     game_run(even_questions, even_task)
     out = capsys.readouterr().out
 
-    assert "Let's try again, Bill" in out
+    assert "Let's try again, Bill!" in out
     assert "Congratulations, Bill!" not in out
 
 
