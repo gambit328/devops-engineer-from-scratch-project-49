@@ -1,23 +1,18 @@
 from random import randint
 
+TASK = "What is the result of the expression?"
 
-def get_questions():
+
+def get_question():
     operations = ["+", "-", "*"]
-    questions = []
 
-    for _ in range(3):
-        num1 = randint(0, 50)
-        num2 = randint(0, 50)
-        operation = operations[randint(0, 2)]
+    num1 = randint(0, 50)
+    num2 = randint(0, 50)
+    operation = operations[randint(0, 2)]
 
-        question, correct_answer = generate_question(num1, num2, operation)
-        questions.append((question, correct_answer))
+    question, correct_answer = generate_question(num1, num2, operation)
 
-    return questions
-
-
-def get_task():
-    return "What is the result of the expression?"
+    return question, correct_answer
 
 
 def generate_question(num1, num2, operation):
@@ -33,4 +28,4 @@ def generate_question(num1, num2, operation):
 
     question = f"{num1} {operation} {num2}"
 
-    return (question, str(correct_answer))
+    return question, str(correct_answer)
