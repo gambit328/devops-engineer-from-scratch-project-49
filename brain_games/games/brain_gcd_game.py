@@ -1,21 +1,16 @@
 from random import randint
 
-
-def get_questions():
-    questions = []
-
-    for _ in range(3):
-        num1 = randint(0, 100)
-        num2 = randint(0, 100)
-        if num2 > num1:
-            num1, num2 = num2, num1
-        questions.append(generate_question(num1, num2))
-
-    return questions
+TASK = "Find the greatest common divisor of given numbers."
 
 
-def get_task():
-    return "Find the greatest common divisor of given numbers."
+def get_question():
+    num1 = randint(0, 100)
+    num2 = randint(0, 100)
+    if num2 > num1:
+        num1, num2 = num2, num1
+    question, correct_answer = generate_question(num1, num2)
+
+    return question, correct_answer
 
 
 def generate_question(num1, num2):
