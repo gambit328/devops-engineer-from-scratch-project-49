@@ -1,3 +1,4 @@
+from types import SimpleNamespace
 import pytest
 from brain_games.game_engine import (
     game_run,
@@ -7,12 +8,19 @@ from brain_games.game_engine import (
 
 
 @pytest.fixture
-def even_questions():
-    return [(4, "yes"), (5, "no"), (8, "yes")]
+def fake_game():
+    rounds = iter([(4, "yes"), (5, "no"), (8, "yes")])
+
+    def get_question():
+        return next(rounds)
+
+    return SimpleNamespace(
+        TASK='Answer "yes" if the number is even, otherwise answer "no".',
+        get_question=get_question,
+    )
 
 
-def test_game_run_win(monkeypatch, capsys, even_questions):
-    even_task = 'Answer "yes" if the number is even, otherwise answer "no".'
+def test_game_run_win(monkeypatch, capsys, fake_game):
     user_answers = iter(["yes", "no", "yes"])
 
     monkeypatch.setattr("brain_games.game_engine.welcome_user", lambda: "Bill")
@@ -21,15 +29,15 @@ def test_game_run_win(monkeypatch, capsys, even_questions):
         "brain_games.game_engine.answer_from_user", lambda: next(user_answers)
     )
 
-    game_run(even_questions, even_task)
+    game_run(fake_game)
     out = capsys.readouterr().out
 
     assert "Let's try again, Bill!" not in out
     assert "Congratulations, Bill!" in out
+    assert fake_game.TASK in out
 
 
-def test_game_run_lose(monkeypatch, capsys, even_questions):
-    even_task = 'Answer "yes" if the number is even, otherwise answer "no".'
+def test_game_run_lose(monkeypatch, capsys, fake_game):
     user_answers = iter(["yes", "yes", "yes"])
 
     monkeypatch.setattr("brain_games.game_engine.welcome_user", lambda: "Bill")
@@ -38,11 +46,12 @@ def test_game_run_lose(monkeypatch, capsys, even_questions):
         "brain_games.game_engine.answer_from_user", lambda: next(user_answers)
     )
 
-    game_run(even_questions, even_task)
+    game_run(fake_game)
     out = capsys.readouterr().out
 
     assert "Let's try again, Bill!" in out
     assert "Congratulations, Bill!" not in out
+    assert fake_game.TASK in out
 
 
 def test_answer_from_user(monkeypatch):

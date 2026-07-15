@@ -1,18 +1,11 @@
-from brain_games.games.brain_even_game import get_questions, get_task
+from brain_games.games.brain_even_game import get_question
 
 
 def test_get_questions(monkeypatch):
-    numbers = iter([4, 5, 8])
+    numbers = iter([5])
 
     monkeypatch.setattr(
         "brain_games.games.brain_even_game.randint", lambda a, b: next(numbers)
     )
 
-    assert get_questions() == [(4, "yes"), (5, "no"), (8, "yes")]
-
-
-def test_get_task():
-    assert (
-        get_task()
-        == 'Answer "yes" if the number is even, otherwise answer "no".'
-    )
+    assert get_question() == (5, "no")

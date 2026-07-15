@@ -1,6 +1,5 @@
 from brain_games.games.brain_progression_game import (
-    get_questions,
-    get_task,
+    get_question,
     generate_question,
 )
 
@@ -13,15 +12,9 @@ def test_get_questions(monkeypatch):
         lambda a, b: next(numbers),
     )
 
-    assert get_questions() == [
-        ("5 7 9 11 13 .. 17 19 21 23", "15"),
-        ("2 5 8 .. 14 17 20 23 26 29", "11"),
-        ("14 19 24 29 34 39 44 49 54 ..", "59"),
-    ]
-
-
-def test_get_task():
-    assert get_task() == "What number is missing in the progression?"
+    assert get_question() == ("5 7 9 11 13 .. 17 19 21 23", "15")
+    assert get_question() == ("2 5 8 .. 14 17 20 23 26 29", "11")
+    assert get_question() == ("14 19 24 29 34 39 44 49 54 ..", "59")
 
 
 def test_generate_question():

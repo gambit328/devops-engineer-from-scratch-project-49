@@ -1,4 +1,4 @@
-from brain_games.games.brain_prime_game import get_questions, get_task, is_prime
+from brain_games.games.brain_prime_game import get_question, is_prime
 
 
 def test_get_questions(monkeypatch):
@@ -8,14 +8,9 @@ def test_get_questions(monkeypatch):
         "brain_games.games.brain_prime_game.randint", lambda a, b: next(numbers)
     )
 
-    assert get_questions() == [(1, "no"), (2, "yes"), (7, "yes")]
-
-
-def test_get_task():
-    assert (
-        get_task()
-        == 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    )
+    assert get_question() == (1, "no")
+    assert get_question() == (2, "yes")
+    assert get_question() == (7, "yes")
 
 
 def test_is_prime():
