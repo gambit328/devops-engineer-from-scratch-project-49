@@ -1,12 +1,17 @@
 from brain_games.cli import welcome_user
 import prompt
 
+ROUNDS = 3
 
-def game_run(questions, task):
+
+def game_run(game):
     username = welcome_user()
-    print(task)
-    for question, correct_answer in questions:
+    print(game.TASK)
+
+    for _ in range(ROUNDS):
+        question, correct_answer = game.get_question()
         print(f"Question: {question}")
+
         user_answer = answer_from_user()
         if not is_correct_answer(user_answer, correct_answer):
             print(
@@ -15,6 +20,7 @@ def game_run(questions, task):
             print(f"Let's try again, {username}!")
             return
         print("Correct!")
+
     print(f"Congratulations, {username}!")
 
 
