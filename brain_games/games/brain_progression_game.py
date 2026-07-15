@@ -1,24 +1,16 @@
 from random import randint
 
-
-def get_questions():
-    questions = []
-
-    for _ in range(3):
-        start_num = randint(0, 50)
-        step = randint(3, 10)
-        secret_num = randint(0, 9)
-
-        question, correct_answer = generate_question(
-            start_num, step, secret_num
-        )
-        questions.append((question, correct_answer))
-
-    return questions
+TASK = "What number is missing in the progression?"
 
 
-def get_task():
-    return "What number is missing in the progression?"
+def get_question():
+    start_num = randint(0, 50)
+    step = randint(3, 10)
+    secret_num = randint(0, 9)
+
+    question, correct_answer = generate_question(start_num, step, secret_num)
+
+    return question, correct_answer
 
 
 def generate_question(start_num, step, secret_num):
