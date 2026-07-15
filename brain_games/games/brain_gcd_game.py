@@ -19,4 +19,4 @@ def generate_question(num1, num2):
         num3 = num1 % num2
         num1, num2 = num2, num3
 
-    return (question, str(num1))
+    return question, str(num1)
